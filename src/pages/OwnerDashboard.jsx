@@ -10,7 +10,7 @@ export default function OwnerDashboard() {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/books");
+        const res = await axios.get("https://book-exchange-red.vercel.app/api/books");
         const myBooks = res.data.filter((book) => book.ownerEmail === user.email);
         setBooks(myBooks);
       } catch (err) {

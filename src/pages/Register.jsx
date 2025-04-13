@@ -23,7 +23,7 @@ export default function Register() {
     };
 
     try {
-      await axios.post("http://localhost:5000/api/register", formData);
+      await axios.post("https://book-exchange-red.vercel.app/api/register", formData);
       alert("Registration successful!");
       navigate("/");
     } catch (err) {
