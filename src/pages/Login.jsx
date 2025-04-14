@@ -16,9 +16,13 @@ export default function Login() {
     };
 
     try {
-      const res = await axios.post("https://book-exchange-red.vercel.app/api/login", loginData, {
-        withCredentials: true,
-      });
+      const res = await axios.post(
+        "https://backend-book-exchange-production-160d.up.railway.app/api/login",
+        loginData,
+        {
+          withCredentials: true,
+        }
+      );
       const user = res.data.user;
 
       localStorage.setItem("user", JSON.stringify(user));

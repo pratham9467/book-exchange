@@ -11,7 +11,7 @@ export default function SeekerDashboard() {
 
   useEffect(() => {
     try {
-      axios.get("https://book-exchange-red.vercel.app/api/books").then((res) => {
+      axios.get("https://backend-book-exchange-production-160d.up.railway.app/api/books").then((res) => {
         setBooks(res.data);
         setFilteredBooks(res.data);
       });

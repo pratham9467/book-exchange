@@ -19,9 +19,13 @@ function BookForm() {
       bookURL: bookURL.current.value,
     };
 
-    const bookAdded = await axios.post("https://book-exchange-red.vercel.app/api/books", newBook, {
-      withCredentials: true,
-    });
+    const bookAdded = await axios.post(
+      "https://backend-book-exchange-production-160d.up.railway.app/api/books",
+      newBook,
+      {
+        withCredentials: true,
+      }
+    );
     alert("Book added!");
     e.target.reset();
 
