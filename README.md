@@ -1,12 +1,57 @@
-# React + Vite
+# 📚 Booxchange
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Booxchange** is a web platform that allows users to **exchange or rent books**. It connects book **Owners** (who want to lend or exchange) with **Seekers** (who are looking for books), creating a community-driven book sharing ecosystem.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## Expanding the ESLint configuration
+Check it out here: [Booxchange on Vercel](https://book-exchange-red.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+- 📖 Add books with title, author, city, and image
+- 🧑‍💼 Owner Dashboard: View and manage your listed books
+- 🔍 Seeker Dashboard: Browse books listed by others
+- 🔄 Exchange or rent books with other users in your city
+- 🌇 Location-based book browsing
+
+---
+
+## 🛠 Tech Stack
+
+| Frontend     | Backend       | Deployment     |
+|--------------|---------------|----------------|
+| Vite + React | Node.js + Express | Vercel (Frontend) |
+| Tailwind CSS |               |                |
+
+---
+
+## 📸 Screenshot
+
+![Owner Dashboard](./assets/owner-dashboard.png)
+
+---
+
+## ⚙️ Setup Instructions
+
+### Prerequisites
+
+- Node.js (v18+)
+- npm (v10+)
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/booxchange.git
+cd booxchange
+
+cd frontend
+npm install
+npm run dev
+
+cd backend
+npm install
+npm run dev
