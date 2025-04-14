@@ -68,12 +68,12 @@ export default function Login() {
             Login
           </button>
         </form>
-        <h5 className="text-center mt-4 text-sm text-gray-600">
+        <p className="text-center mt-4 text-sm text-gray-600">
           Don't have an account?{" "}
           <span onClick={() => navigate("/register")} className="text-orange-600 cursor-pointer hover:underline">
             Register here
           </span>
-        </h5>
+        </p>
       </div>
     </div>
   );
